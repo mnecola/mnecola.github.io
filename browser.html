@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Basic Webpage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- linking css file with html file -->
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+    <h1>Information & Resources</h1>  
+    </div>
+                    <nav class="navbar navbar-inverse">
+                        <div class="container-fluid">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html">Course</a></li>
+                                <li class="active"><a href="browser.html">Browser</a></li>
+                                <li><a href="about.html">About</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="titles">Resources</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/2175px-W3Schools_logo.svg.png">
+      </div>
+      <div class="col-md-8">
+        <!--Navigator-->
+        <h2>The Navigator Object</h2>
+        <p id="demo1"></p>
+        <script>
+        document.getElementById("demo1").innerHTML =
+        "-The appName is " + navigator.appName + 
+        "<br>-The navigator.product is " + navigator.product + 
+        "<br>-The appVersion is " + navigator.appVersion + 
+        "<br>-The appAgent is " + navigator.userAgent + 
+        "<br>-The platform is " + navigator.platform + 
+        "<br>-The language is " + navigator.language;
+        </script>
+        <!--Window-->
+        <h2>JavaScript Window</h2>
+        <p id="demo2"></p>
+        <script>
+        document.getElementById("demo2").innerHTML =
+        "-Browser inner window width: " + window.innerWidth + "px<br>" +
+        "-Browser inner window height: " + window.innerHeight + "px";
+        </script>
+        <!--Screen-->
+        <h2>The Screen</h2>
+        <p id="demo3"></p>
+        <script>
+        document.getElementById("demo3").innerHTML = 
+        "-The Screen width is " + screen.width + 
+        "<br>-The Screen height is " + screen.height + 
+        "<br>-The Screen availWidth is " + screen.availWidth + 
+        "<br>-The Screen availHeight is " + screen.availHeight + 
+        "<br>-The Screen colorDepth is " + screen.colorDepth + 
+        "<br>-The Screen pixelDepth is " + screen.pixelDepth;
+        </script>
+        <!--Location-->
+        <h3>The Location object</h3>
+        <p id="demo4"></p>
+        <script>
+        document.getElementById("demo4").innerHTML = 
+        "-Page location is " + window.location.href + 
+        "<br>-Page hostname is " + window.location.hostname + 
+        "<br>-Page path is " + window.location.pathname + 
+        "<br>-Page protocol is " + window.location.protocol; 
+        </script>
+        <!--Geolocation-->
+        <h2>JavaScript Geolocation API</h2>
+        <p>Click the button to get your coordinates.</p>
+        <button onclick="getLocation()">Try It</button>
+        <p id="demo5"></p>
+        <script>
+        const x = document.getElementById("demo5");
+        function getLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else { 
+            x.innerHTML = "Geolocation is not supported by this browser.";
+          }
+        }
+        function showPosition(position) {
+          x.innerHTML = "Latitude: " + position.coords.latitude + 
+          "<br>Longitude: " + position.coords.longitude;
+        }
+        </script>
+      </div>
+      <p class="mytext">Reference to learn about the Navigator feature <a href="https://www.w3schools.com/js/js_window_navigator.asp">Here!</a>
+      </p>
+      <p class="mytext2">Reference to learn about the Window feature <a href="https://www.w3schools.com/js/js_window.asp">Here!</a>
+      </p>
+      <p class="mytext3">Reference to learn about the Screen feature <a href="https://www.w3schools.com/js/js_window_screen.asp">Here!</a>
+      </p>
+      <p class="mytext4">Reference to learn about the Location feature <a href="https://www.w3schools.com/js/js_window_location.asp">Here!</a>
+      </p>
+      <p class="mytext5">Reference to learn about the Geolocation feature <a href="https://www.w3schools.com/js/js_api_geolocation.asp">Here!</a>
+      </p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>

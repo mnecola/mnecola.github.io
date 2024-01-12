@@ -1,0 +1,54 @@
+body{
+    background-color:rgb(135, 145, 169);
+  }
+  #myPage .panel {
+      width: 400px;   float: left;    margin: 20px;
+  }
+  #myPage .panel-heading {
+      background-color: darkred;     color: white; 
+  }         
+  #myPage .panel-body {
+      background-color: black;        color: white; 
+  }
+  #myPage .panel-footer {
+      background-color: #7FFFD4;      color: black; 
+  }
+  .mytext{
+      font-size: 18pt;
+      text-align: center;
+  }
+  .mytext2{
+      font-size: 18pt;
+      text-align: center;
+  }
+  .mytext3{
+      font-size: 18pt;
+      text-align: center;
+  }
+  .mytext4{
+    font-size: 18pt;
+    text-align: center;
+  }
+  .mytext5{
+    font-size: 18pt;
+    text-align: center;
+  }
+  .jumbotron{
+      text-align: center;
+      color: white;
+      background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b6cfb470986679.5bb5b7f2e11ad.jpg);
+  }
+  .titles{
+      background-color:#222;
+      color:white;
+      text-align:center;
+  }
+  .logo{
+      width:90%;
+  }
+  .item img{
+      width:1000px;
+  }
+  p{
+    color:white;
+  }      
